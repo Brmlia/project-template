@@ -25,8 +25,8 @@ all: help ## No default targets -- just print this message
 README.md: README.org
 	pandoc -s $^ -o $@
 
-package.json:   ## merge package.json with base-package.json
-	${JQ} -s '.[0] * .[1]' base-package.json ${PACKAGES} > $@
+package.json:   ## merge package.json with base-packages.json
+	${JQ} -s '.[0] * .[1]' base-packages.json ${PACKAGES} > $@
 
 
 #~~~~~~~~ Npm Registy ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

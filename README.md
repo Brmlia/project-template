@@ -3,7 +3,7 @@ Integrate basic project setup: CI, test, formatting, git hooks, config files, pa
 Either just copy files to repo or fork it and run
 
 ```sh
-PACKAGES=brmlia/package.json make packages.json
+PACKAGES=path/to/other/package.json make packages.json
 rm base-packages.json
 ```
 
